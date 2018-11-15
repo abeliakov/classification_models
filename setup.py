@@ -1,12 +1,8 @@
-from setuptools import setup
+from setuptools import setup, find_packages
+
+print(find_packages(exclude=['tests']))
 
 setup(
     name='classification_models',
-    version='',
-    packages=['classification_models', 'classification_models.resnet', 'classification_models.resnext'],
-    url='',
-    license='',
-    author='',
-    author_email='',
-    description=''
+    packages=find_packages(exclude=['tests']),
 )
